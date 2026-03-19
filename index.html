@@ -1,34 +1,245 @@
 <!DOCTYPE html>
-  <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8">
-    <title>隐私政策 - 实时翻译插件</title>
-    <style>
-      body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.8; color:
-  #333; }
-      h1 { color: #007bff; }
-      h2 { margin-top: 28px; font-size: 16px; }
-    </style>
-  </head>
-  <body>
-    <h1>隐私政策</h1>
-    <p>最后更新：2026年3月</p>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy / 隐私政策 - Telegram & WhatsApp Real-time Translator</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.8;
+    }
+    .header {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .header h1 { font-size: 24px; margin-bottom: 8px; }
+    .header p { font-size: 14px; opacity: 0.85; }
+    .lang-switch {
+      text-align: center;
+      padding: 16px;
+      background: white;
+      border-bottom: 1px solid #eee;
+    }
+    .lang-switch button {
+      padding: 6px 20px;
+      margin: 0 6px;
+      border: 1px solid #007bff;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 13px;
+      background: white;
+      color: #007bff;
+      transition: all 0.2s;
+    }
+    .lang-switch button.active {
+      background: #007bff;
+      color: white;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px 60px;
+    }
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .section h2 {
+      font-size: 16px;
+      color: #007bff;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #eef2ff;
+    }
+    .section p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+    .section ul {
+      padding-left: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+    .section ul li { margin-bottom: 6px; }
+    .updated {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 20px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      padding: 20px;
+    }
+    [lang-content="en"] { display: none; }
+  </style>
+</head>
+<body>
 
-    <h2>1. 我们收集哪些数据</h2>
-    <p>本扩展仅在本地存储以下信息：用户的语言偏好设置、激活码（用于授权验证）。我们不收集任何个人身份信息、聊天内容或浏
-  览记录。</p>
+<div class="header">
+  <h1>🌐 Telegram & WhatsApp Real-time Translator</h1>
+  <p>Privacy Policy / 隐私政策</p>
+</div>
 
-    <h2>2. 数据如何使用</h2>
-    <p>用户在 Telegram 和 WhatsApp
-  网页版中的聊天文本会被发送至翻译服务接口进行翻译处理，翻译完成后结果直接显示在页面上，我们不存储任何聊天内容。</p>
+<div class="lang-switch">
+  <button class="active" onclick="switchLang('zh')">中文</button>
+  <button onclick="switchLang('en')">English</button>
+</div>
 
-    <h2>3. 数据共享</h2>
-    <p>我们不会将用户数据出售、出租或共享给任何第三方。</p>
+<div class="container">
 
-    <h2>4. 数据安全</h2>
-    <p>激活码仅存储在用户本地浏览器中，不会上传至服务器。翻译请求通过 HTTPS 加密传输。</p>
+  <!-- 中文 -->
+  <div lang-content="zh">
+    <p class="updated">最后更新：2026年3月</p>
 
-    <h2>5. 联系我们</h2>
-    <p>如有隐私相关问题，请通过 Telegram 联系：@hug_zz</p>
-  </body>
-  </html>
+    <div class="section">
+      <h2>1. 概述</h2>
+      <p>本隐私政策适用于 Chrome 扩展程序"Telegram & WhatsApp 实时翻译"（以下简称"本扩展"）。我们非常重视用户隐私，本扩展在设计上遵循最小数据原则。</p>
+    </div>
+
+    <div class="section">
+      <h2>2. 我们收集的数据</h2>
+      <p>本扩展仅在用户本地浏览器中存储以下信息：</p>
+      <ul>
+        <li><strong>激活码</strong>：用于验证用户授权状态，仅存储在本地，不上传至任何服务器</li>
+        <li><strong>设备标识符</strong>：根据浏览器硬件信息生成的匿名标识，用于防止激活码被多设备滥用</li>
+        <li><strong>语言偏好设置</strong>：用户选择的翻译源语言和目标语言</li>
+        <li><strong>翻译缓存</strong>：已翻译的文本结果，存储在本地以提升响应速度，减少重复请求</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. 数据使用方式</h2>
+      <ul>
+        <li>用户聊天消息中的文本内容会被发送至翻译服务接口进行翻译，翻译完成后结果直接显示在页面上</li>
+        <li>我们<strong>不存储</strong>任何用户的聊天内容</li>
+        <li>翻译请求仅包含需要翻译的文本、目标语言及授权凭证，不包含任何个人身份信息</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. 数据共享</h2>
+      <p>我们不会将用户数据出售、出租或以任何形式共享给第三方。翻译文本仅发送至本扩展自有的翻译服务接口，不会传递给任何其他组织或个人。</p>
+    </div>
+
+    <div class="section">
+      <h2>5. 数据安全</h2>
+      <ul>
+        <li>所有与翻译服务的通信均通过 HTTPS 加密传输</li>
+        <li>激活码和设备标识符仅存储在用户本地浏览器的 chrome.storage 中</li>
+        <li>本扩展不使用任何第三方分析或追踪工具</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>6. 用户权利</h2>
+      <p>用户可随时通过卸载本扩展来删除所有本地存储的数据。如需手动清除，可在 Chrome 扩展管理页面中清除本扩展的存储数据。</p>
+    </div>
+
+    <div class="section">
+      <h2>7. 政策变更</h2>
+      <p>如本隐私政策发生变更，我们将在本页面更新内容并注明修改日期。建议用户定期查阅本页面。</p>
+    </div>
+
+    <div class="section">
+      <h2>8. 联系我们</h2>
+      <p>如您对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
+      <ul>
+        <li>Telegram：@hug_zz</li>
+        <li>微信：watghugzz</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- English -->
+  <div lang-content="en">
+    <p class="updated">Last updated: March 2026</p>
+
+    <div class="section">
+      <h2>1. Overview</h2>
+      <p>This Privacy Policy applies to the Chrome extension "Telegram & WhatsApp Real-time Translator" (hereinafter "the Extension"). We take user privacy seriously and the Extension is designed with a minimal data principle.</p>
+    </div>
+
+    <div class="section">
+      <h2>2. Data We Collect</h2>
+      <p>The Extension only stores the following information locally in the user's browser:</p>
+      <ul>
+        <li><strong>Activation Code</strong>: Used to verify user authorization status. Stored locally only, never uploaded to any server.</li>
+        <li><strong>Device Identifier</strong>: An anonymous identifier generated from browser hardware information, used to prevent activation codes from being abused across multiple devices.</li>
+        <li><strong>Language Preferences</strong>: The source and target languages selected by the user.</li>
+        <li><strong>Translation Cache</strong>: Previously translated text results stored locally to improve response speed and reduce repeated requests.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. How Data Is Used</h2>
+      <ul>
+        <li>Text content from chat messages is sent to the translation service API for translation, and the result is displayed directly on the page.</li>
+        <li>We do <strong>not store</strong> any user chat content.</li>
+        <li>Translation requests only contain the text to be translated, the target language, and the authorization credential — no personally identifiable information.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Data Sharing</h2>
+      <p>We do not sell, rent, or share user data with any third parties. Translated text is only sent to the Extension's own translation service API and is not passed to any other organization or individual.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Data Security</h2>
+      <ul>
+        <li>All communication with the translation service is encrypted via HTTPS.</li>
+        <li>Activation codes and device identifiers are stored only in the user's local browser via chrome.storage.</li>
+        <li>The Extension does not use any third-party analytics or tracking tools.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>6. User Rights</h2>
+      <p>Users can delete all locally stored data at any time by uninstalling the Extension. To manually clear data, users can clear the Extension's storage from the Chrome Extensions management page.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Policy Changes</h2>
+      <p>If this Privacy Policy changes, we will update the content on this page and note the revision date. We recommend users check this page periodically.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us:</p>
+      <ul>
+        <li>Telegram: @hug_zz</li>
+        <li>WeChat: watghugzz</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">© 2026 Telegram & WhatsApp Real-time Translator. All rights reserved.</div>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('[lang-content]').forEach(el => {
+      el.style.display = el.getAttribute('lang-content') === lang ? 'block' : 'none';
+    });
+    document.querySelectorAll('.lang-switch button').forEach((btn, i) => {
+      btn.classList.toggle('active', (lang === 'zh' && i === 0) || (lang === 'en' && i === 1));
+    });
+  }
+</script>
+
+</body>
+</html>
