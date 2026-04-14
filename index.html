@@ -1,245 +1,390 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy / 隐私政策 - Telegram & WhatsApp Real-time Translator</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #f5f7fa;
-      color: #333;
-      line-height: 1.8;
-    }
-    .header {
-      background: linear-gradient(135deg, #007bff, #0056b3);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .header h1 { font-size: 24px; margin-bottom: 8px; }
-    .header p { font-size: 14px; opacity: 0.85; }
-    .lang-switch {
-      text-align: center;
-      padding: 16px;
-      background: white;
-      border-bottom: 1px solid #eee;
-    }
-    .lang-switch button {
-      padding: 6px 20px;
-      margin: 0 6px;
-      border: 1px solid #007bff;
-      border-radius: 20px;
-      cursor: pointer;
-      font-size: 13px;
-      background: white;
-      color: #007bff;
-      transition: all 0.2s;
-    }
-    .lang-switch button.active {
-      background: #007bff;
-      color: white;
-    }
-    .container {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 0 20px 60px;
-    }
-    .section {
-      background: white;
-      border-radius: 10px;
-      padding: 28px 32px;
-      margin-bottom: 16px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    }
-    .section h2 {
-      font-size: 16px;
-      color: #007bff;
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #eef2ff;
-    }
-    .section p {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 8px;
-    }
-    .section ul {
-      padding-left: 20px;
-      font-size: 14px;
-      color: #555;
-    }
-    .section ul li { margin-bottom: 6px; }
-    .updated {
-      text-align: center;
-      font-size: 12px;
-      color: #999;
-      margin-bottom: 20px;
-    }
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      color: #aaa;
-      padding: 20px;
-    }
-    [lang-content="en"] { display: none; }
-  </style>
-</head>
-<body>
+# WA/TG 实时翻译隐私政策
 
-<div class="header">
-  <h1>🌐 Telegram & WhatsApp Real-time Translator</h1>
-  <p>Privacy Policy / 隐私政策</p>
-</div>
+**生效日期 / Last updated：2026-04-14**
 
-<div class="lang-switch">
-  <button class="active" onclick="switchLang('zh')">中文</button>
-  <button onclick="switchLang('en')">English</button>
-</div>
+感谢您使用 **WA/TG 实时翻译** Chrome 扩展程序（以下简称“本扩展”）。
+本隐私政策用于说明：本扩展会处理哪些数据、这些数据如何使用、会与哪些服务发生必要的数据交互，以及用户可以如何理解和管理相关数据。
 
-<div class="container">
+本扩展的核心用途是：
 
-  <!-- 中文 -->
-  <div lang-content="zh">
-    <p class="updated">最后更新：2026年3月</p>
+- 为 **Telegram Web** 与 **WhatsApp Web** 提供实时聊天翻译功能
+- 支持将接收到的外语消息翻译为目标语言
+- 支持将用户输入的文本在发送前翻译为目标语言
+- 提供与上述核心功能直接相关的 **微信登录、会员验证、卡密兑换、订单支付和状态恢复** 功能
 
-    <div class="section">
-      <h2>1. 概述</h2>
-      <p>本隐私政策适用于 Chrome 扩展程序"Telegram & WhatsApp 实时翻译"（以下简称"本扩展"）。我们非常重视用户隐私，本扩展在设计上遵循最小数据原则。</p>
-    </div>
+---
 
-    <div class="section">
-      <h2>2. 我们收集的数据</h2>
-      <p>本扩展仅在用户本地浏览器中存储以下信息：</p>
-      <ul>
-        <li><strong>激活码</strong>：用于验证用户授权状态，仅存储在本地，不上传至任何服务器</li>
-        <li><strong>设备标识符</strong>：根据浏览器硬件信息生成的匿名标识，用于防止激活码被多设备滥用</li>
-        <li><strong>语言偏好设置</strong>：用户选择的翻译源语言和目标语言</li>
-        <li><strong>翻译缓存</strong>：已翻译的文本结果，存储在本地以提升响应速度，减少重复请求</li>
-      </ul>
-    </div>
+## 1. 我们可能处理的数据
 
-    <div class="section">
-      <h2>3. 数据使用方式</h2>
-      <ul>
-        <li>用户聊天消息中的文本内容会被发送至翻译服务接口进行翻译，翻译完成后结果直接显示在页面上</li>
-        <li>我们<strong>不存储</strong>任何用户的聊天内容</li>
-        <li>翻译请求仅包含需要翻译的文本、目标语言及授权凭证，不包含任何个人身份信息</li>
-      </ul>
-    </div>
+为了提供上述功能，本扩展可能处理以下数据：
 
-    <div class="section">
-      <h2>4. 数据共享</h2>
-      <p>我们不会将用户数据出售、出租或以任何形式共享给第三方。翻译文本仅发送至本扩展自有的翻译服务接口，不会传递给任何其他组织或个人。</p>
-    </div>
+### 1.1 聊天与翻译相关数据
+- Telegram / WhatsApp 页面中的待翻译聊天文本
+- 用户在输入框中主动提交用于翻译的文本
+- 翻译源语言、目标语言等翻译参数
+- 为减少重复请求而在浏览器本地保存的翻译缓存结果及必要缓存键
 
-    <div class="section">
-      <h2>5. 数据安全</h2>
-      <ul>
-        <li>所有与翻译服务的通信均通过 HTTPS 加密传输</li>
-        <li>激活码和设备标识符仅存储在用户本地浏览器的 chrome.storage 中</li>
-        <li>本扩展不使用任何第三方分析或追踪工具</li>
-      </ul>
-    </div>
+**用途：** 完成实时翻译、发送前翻译，并提升翻译响应速度。
 
-    <div class="section">
-      <h2>6. 用户权利</h2>
-      <p>用户可随时通过卸载本扩展来删除所有本地存储的数据。如需手动清除，可在 Chrome 扩展管理页面中清除本扩展的存储数据。</p>
-    </div>
+### 1.2 账号与身份数据
+- 微信相关身份标识，例如 OpenID、系统生成的稳定用户ID、昵称（如有）
+- 插件前端展示用的脱敏身份信息，例如掩码后的 OpenID、用户ID标签
 
-    <div class="section">
-      <h2>7. 政策变更</h2>
-      <p>如本隐私政策发生变更，我们将在本页面更新内容并注明修改日期。建议用户定期查阅本页面。</p>
-    </div>
+**用途：** 完成微信登录、识别当前账号、绑定或恢复会员权益、展示当前账号状态。
 
-    <div class="section">
-      <h2>8. 联系我们</h2>
-      <p>如您对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
-      <ul>
-        <li>Telegram：@hug_zz</li>
-        <li>微信：watghugzz</li>
-      </ul>
-    </div>
-  </div>
+### 1.3 身份验证与授权数据
+- 登录 token
+- 微信动态码会话信息
+- 激活码 / 卡密
+- 会员状态、试用状态、到期时间
+- 设备标识（deviceId）
 
-  <!-- English -->
-  <div lang-content="en">
-    <p class="updated">Last updated: March 2026</p>
+**用途：** 完成登录校验、会员验证、卡密兑换、账号与设备上下文识别、状态恢复和安全校验。
 
-    <div class="section">
-      <h2>1. Overview</h2>
-      <p>This Privacy Policy applies to the Chrome extension "Telegram & WhatsApp Real-time Translator" (hereinafter "the Extension"). We take user privacy seriously and the Extension is designed with a minimal data principle.</p>
-    </div>
+### 1.4 订单与支付数据
+- 购买套餐
+- 订单金额
+- 订单状态
+- 支付创建时间、支付确认时间
+- 区块链交易哈希（tx hash）
+- 与订单绑定的内部账号标识及设备标识
 
-    <div class="section">
-      <h2>2. Data We Collect</h2>
-      <p>The Extension only stores the following information locally in the user's browser:</p>
-      <ul>
-        <li><strong>Activation Code</strong>: Used to verify user authorization status. Stored locally only, never uploaded to any server.</li>
-        <li><strong>Device Identifier</strong>: An anonymous identifier generated from browser hardware information, used to prevent activation codes from being abused across multiple devices.</li>
-        <li><strong>Language Preferences</strong>: The source and target languages selected by the user.</li>
-        <li><strong>Translation Cache</strong>: Previously translated text results stored locally to improve response speed and reduce repeated requests.</li>
-      </ul>
-    </div>
+**用途：** 创建订单、查询支付状态、核验到账、自动开通会员、恢复支付结果、处理售后支持。
 
-    <div class="section">
-      <h2>3. How Data Is Used</h2>
-      <ul>
-        <li>Text content from chat messages is sent to the translation service API for translation, and the result is displayed directly on the page.</li>
-        <li>We do <strong>not store</strong> any user chat content.</li>
-        <li>Translation requests only contain the text to be translated, the target language, and the authorization credential — no personally identifiable information.</li>
-      </ul>
-    </div>
+### 1.5 运行与排障数据
+- 为保障支付识别、登录验证、服务稳定性和故障排查而生成的必要技术日志或调试信息
 
-    <div class="section">
-      <h2>4. Data Sharing</h2>
-      <p>We do not sell, rent, or share user data with any third parties. Translated text is only sent to the Extension's own translation service API and is not passed to any other organization or individual.</p>
-    </div>
+**用途：** 安全校验、异常排查、服务稳定性维护。
 
-    <div class="section">
-      <h2>5. Data Security</h2>
-      <ul>
-        <li>All communication with the translation service is encrypted via HTTPS.</li>
-        <li>Activation codes and device identifiers are stored only in the user's local browser via chrome.storage.</li>
-        <li>The Extension does not use any third-party analytics or tracking tools.</li>
-      </ul>
-    </div>
+---
 
-    <div class="section">
-      <h2>6. User Rights</h2>
-      <p>Users can delete all locally stored data at any time by uninstalling the Extension. To manually clear data, users can clear the Extension's storage from the Chrome Extensions management page.</p>
-    </div>
+## 2. 数据如何使用
 
-    <div class="section">
-      <h2>7. Policy Changes</h2>
-      <p>If this Privacy Policy changes, we will update the content on this page and note the revision date. We recommend users check this page periodically.</p>
-    </div>
+我们仅将相关数据用于本扩展核心功能，包括但不限于：
 
-    <div class="section">
-      <h2>8. Contact Us</h2>
-      <p>If you have any questions about this Privacy Policy, please contact us:</p>
-      <ul>
-        <li>Telegram: @hug_zz</li>
-        <li>WeChat: watghugzz</li>
-      </ul>
-    </div>
-  </div>
+- 提供 Telegram Web 与 WhatsApp Web 的聊天翻译
+- 提供发送前输入翻译
+- 完成微信登录与账号识别
+- 验证会员、试用和卡密状态
+- 创建和查询支付订单
+- 核验 TRC20 USDT 支付是否到账
+- 在支付成功后自动开通会员或恢复已有权益
+- 进行必要的安全校验、故障排查和服务维护
 
-</div>
+我们**不会**将用户数据用于与本扩展核心功能无关的用途。
 
-<div class="footer">© 2026 Telegram & WhatsApp Real-time Translator. All rights reserved.</div>
+---
 
-<script>
-  function switchLang(lang) {
-    document.querySelectorAll('[lang-content]').forEach(el => {
-      el.style.display = el.getAttribute('lang-content') === lang ? 'block' : 'none';
-    });
-    document.querySelectorAll('.lang-switch button').forEach((btn, i) => {
-      btn.classList.toggle('active', (lang === 'zh' && i === 0) || (lang === 'en' && i === 1));
-    });
-  }
-</script>
+## 3. 数据存储位置
 
-</body>
-</html>
+### 3.1 浏览器本地存储
+本扩展会在浏览器本地（例如 `chrome.storage.local`）保存与功能直接相关的数据，例如：
+
+- 语言设置
+- 翻译开关状态
+- 登录状态
+- 用户身份展示信息
+- 会员 / 试用状态
+- 卡密 / 授权状态
+- 设备标识
+- 待支付订单恢复信息
+- 本地翻译缓存结果
+
+### 3.2 服务端存储
+为支持登录、账号识别、会员绑定、订单支付、支付核验和状态恢复，本扩展配套服务可能存储以下数据：
+
+- 微信身份标识（例如 OpenID、稳定用户ID、昵称等）
+- 登录 token 与微信动态码会话数据
+- 会员与卡密绑定关系
+- 订单、支付状态、交易哈希等数据
+- 必要的技术日志与故障排查信息
+
+---
+
+## 4. 第三方服务与必要的数据传输
+
+为了实现本扩展核心功能，相关数据可能在本扩展、自有服务及必要的第三方服务之间进行传输。相关第三方服务包括但不限于：
+
+### 4.1 微信公众号相关服务
+用于扫码 / 动态码登录、身份识别和账号确认。
+
+### 4.2 DeepSeek 翻译服务
+用于生成翻译结果。用户提交用于翻译的文本，会通过我们的服务转发给翻译服务提供商进行处理。
+
+### 4.3 TRONSCAN / 波场链相关查询服务
+用于查询 TRC20 USDT 转账记录，以核验支付是否到账。
+
+### 4.4 Telegram Bot API（如已启用）
+如果服务端开启订单通知，支付成功后的订单通知可能会发送给服务运营者，用于订单监控、售后支持和安全审计。通知内容可能包括套餐、金额、交易哈希以及内部用户ID等必要订单信息。
+
+上述第三方服务仅在实现本扩展核心功能所必需时使用。
+
+---
+
+## 5. 数据共享与出售
+
+- 我们**不会出售**用户数据
+- 我们**不会将用户数据用于广告投放**
+- 我们**不会将用户数据用于与本扩展核心功能无关的用途**
+
+除为实现翻译、登录识别、会员验证、支付核验、订单通知和必要运维支持所必需的情况外，我们不会将用户数据提供给无关第三方。
+
+---
+
+## 6. 数据保留
+
+我们会在提供登录、会员管理、订单支付、状态恢复、售后支持、安全审计和故障排查所必需的范围内保留相关数据。
+
+其中：
+
+- 与账号、会员、卡密、订单、支付相关的数据，可能在服务端保留，以支持权益校验和历史订单处理
+- 翻译相关内容主要用于即时处理；本扩展可能在用户浏览器本地缓存部分翻译结果，以减少重复请求
+- 用户卸载扩展或清除扩展本地存储后，本地保存的数据可被移除
+
+---
+
+## 7. 用户说明与管理方式
+
+如果您不希望本扩展处理聊天文本、登录信息、授权信息或订单支付信息，请停止使用本扩展并将其移除。
+
+您可以通过以下方式管理本地数据：
+
+- 卸载本扩展
+- 在浏览器扩展管理页面清除本扩展的本地存储数据
+
+请注意：删除本地数据后，部分登录状态、授权状态、订单恢复信息和本地缓存可能无法继续保留。
+
+---
+
+## 8. 关于远程代码
+
+本扩展不会下载、注入或执行远程 JavaScript、Wasm 或其他可执行代码。
+
+远程服务返回的内容主要为翻译结果、登录状态、会员状态、订单状态等数据，这些内容不会作为代码执行。
+
+---
+
+## 9. 相关服务与域名
+
+本扩展当前涉及的主要站点 / 域名包括：
+
+### 9.1 扩展运行页面 / 自有服务
+- `https://web.telegram.org/*`
+- `https://web.whatsapp.com/*`
+- `https://translator-worker.hugmogri.workers.dev/*`
+
+### 9.2 第三方相关服务
+- `https://api.deepseek.com/`
+- `https://apilist.tronscanapi.com/`
+- `https://tronscan.org/`
+- `https://api.telegram.org/`（如启用订单通知）
+
+---
+
+## 10. 政策更新
+
+如果本扩展的功能、数据处理方式、第三方服务或合规要求发生变化，本隐私政策也会相应更新。请以本页面中的最新版本为准。
+
+---
+
+## 11. 联系方式
+
+如果您对本隐私政策有任何疑问，可通过以下方式联系：
+
+- Telegram：`@hug_zz`
+- 微信：`watghugzz`
+
+---
+
+# WA/TG Real-time Translator Privacy Policy
+
+**Last updated: 2026-04-14**
+
+Thank you for using the **WA/TG Real-time Translator** Chrome extension (the “Extension”). This Privacy Policy explains what data the Extension may process, how such data is used, how it may be transmitted to necessary service providers, and how users can understand and manage related data.
+
+The Extension is designed to:
+
+- provide real-time translation for **Telegram Web** and **WhatsApp Web**
+- translate incoming foreign-language messages into the target language
+- translate user-entered text before sending
+- provide **WeChat login, membership verification, activation code redemption, order payment, and status recovery** features directly related to the core service
+
+---
+
+## 1. Data We May Process
+
+To provide these features, the Extension may process the following categories of data:
+
+### 1.1 Chat and translation-related data
+- chat text from Telegram / WhatsApp pages that the user requests or triggers for translation
+- text entered by the user for pre-send translation
+- translation parameters such as source language and target language
+- locally stored translation cache results and necessary cache keys used to reduce repeated requests
+
+**Purpose:** to provide real-time translation, pre-send translation, and improve response speed.
+
+### 1.2 Account and identity data
+- WeChat-related identifiers such as OpenID, a system-generated stable user ID, and nickname (if available)
+- masked or display-oriented identity information shown in the extension UI, such as masked OpenID and user label
+
+**Purpose:** to complete WeChat login, identify the current account, bind or restore membership entitlements, and display account status.
+
+### 1.3 Authentication and authorization data
+- login token
+- WeChat session / dynamic code information
+- activation code / license code
+- membership status, trial status, expiration time
+- device identifier (deviceId)
+
+**Purpose:** login verification, membership verification, activation code redemption, account/device context recognition, state recovery, and security checks.
+
+### 1.4 Order and payment data
+- selected plan
+- order amount
+- order status
+- payment creation / confirmation timestamps
+- blockchain transaction hash (tx hash)
+- internal account identifier and device identifier associated with the order
+
+**Purpose:** order creation, payment status checks, payment verification, automatic membership activation, payment recovery, and support handling.
+
+### 1.5 Operational and troubleshooting data
+- necessary technical logs or debugging information used to support payment recognition, login verification, service reliability, and troubleshooting
+
+**Purpose:** security checks, troubleshooting, and service maintenance.
+
+---
+
+## 2. How Data Is Used
+
+We use relevant data only for the Extension’s core functions, including:
+
+- providing translation on Telegram Web and WhatsApp Web
+- translating text before sending
+- completing WeChat login and account recognition
+- verifying membership, trial, and activation code status
+- creating and checking payment orders
+- verifying TRC20 USDT payment status
+- automatically activating membership or restoring existing entitlements after successful payment
+- performing necessary security checks, troubleshooting, and service maintenance
+
+We do **not** use user data for purposes unrelated to the Extension’s core functions.
+
+---
+
+## 3. Where Data Is Stored
+
+### 3.1 Browser local storage
+The Extension may store data in the user’s browser local storage (such as `chrome.storage.local`), including:
+
+- language settings
+- translation switch states
+- login state
+- identity display information
+- membership / trial state
+- activation / authorization state
+- device identifier
+- pending order recovery information
+- local translation cache results
+
+### 3.2 Server-side storage
+To support login, identity recognition, membership binding, payment, payment verification, and state recovery, the related service may store:
+
+- WeChat identity information (such as OpenID, stable user ID, nickname, etc.)
+- login token and WeChat session data
+- membership / activation code binding relationships
+- order data, payment status, and transaction hash data
+- necessary technical logs and troubleshooting information
+
+---
+
+## 4. Third-Party Services and Necessary Data Transfer
+
+To provide the Extension’s core functionality, data may be transmitted between the Extension, our own service, and necessary third-party services, including but not limited to:
+
+### 4.1 WeChat-related services
+Used for code-based login, identity recognition, and account verification.
+
+### 4.2 DeepSeek translation service
+Used to generate translation results. Text submitted for translation may be forwarded through our service to the translation provider for processing.
+
+### 4.3 TRONSCAN / TRON-related query services
+Used to query TRC20 USDT transfer records and verify whether payment has been received.
+
+### 4.4 Telegram Bot API (if enabled)
+If server-side order notification is enabled, successful payment notifications may be sent to the service operator for order monitoring, support, and security review. Such notifications may include the plan, amount, transaction hash, and internal user ID.
+
+These services are used only when necessary to provide the Extension’s core functions.
+
+---
+
+## 5. Data Sharing and Sale
+
+- We do **not sell** user data
+- We do **not use** user data for advertising
+- We do **not use** user data for purposes unrelated to the Extension’s core functions
+
+Except where necessary to provide translation, login recognition, membership verification, payment verification, order notification, and related operational support, we do not provide user data to unrelated third parties.
+
+---
+
+## 6. Data Retention
+
+We retain relevant data only as necessary to provide login, membership management, payment handling, state recovery, customer support, security review, and troubleshooting.
+
+In particular:
+
+- account, membership, activation code, order, and payment-related data may be retained server-side to support entitlement verification and order history processing
+- translation-related content is primarily processed for immediate service purposes; some translation results may be cached locally in the user’s browser to reduce repeated requests
+- locally stored data can be removed by uninstalling the Extension or clearing extension storage
+
+---
+
+## 7. User Choices and Controls
+
+If you do not want the Extension to process chat text, login information, authorization information, or order/payment information, please stop using and remove the Extension.
+
+Users may manage locally stored data by:
+
+- uninstalling the Extension
+- clearing the Extension’s local storage through the browser extension management interface
+
+Please note that removing local data may also remove login state, authorization state, pending order recovery data, and local cache.
+
+---
+
+## 8. Remote Code
+
+The Extension does not download, inject, or execute remote JavaScript, Wasm, or other executable code.
+
+Remote services return data such as translation results, login state, membership state, and order status, and such data is not executed as code.
+
+---
+
+## 9. Related Services and Domains
+
+### 9.1 Extension runtime / own service
+- `https://web.telegram.org/*`
+- `https://web.whatsapp.com/*`
+- `https://translator-worker.hugmogri.workers.dev/*`
+
+### 9.2 Third-party related services
+- `https://api.deepseek.com/`
+- `https://apilist.tronscanapi.com/`
+- `https://tronscan.org/`
+- `https://api.telegram.org/` (if order notifications are enabled)
+
+---
+
+## 10. Policy Updates
+
+If the Extension’s functions, data processing practices, third-party services, or compliance requirements change, this Privacy Policy may also be updated. Please refer to the latest version of this page.
+
+---
+
+## 11. Contact
+
+If you have any questions about this Privacy Policy, you may contact us via:
+
+- Telegram: `@hug_zz`
+- WeChat: `watghugzz`
