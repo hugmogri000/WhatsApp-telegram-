@@ -105,7 +105,7 @@
     <section class="hero">
       <h1>WA/TG 实时翻译</h1>
       <p class="sub">Privacy Policy / 隐私政策</p>
-      <p class="date">最后更新 / Last updated: 2026-04-14</p>
+      <p class="date">最后更新 / Last updated: 2026-04-15</p>
     </section>
 
     <section class="card">
@@ -183,7 +183,7 @@
       <p>为了实现本扩展核心功能，我们可能通过自有服务调用第三方服务，包括但不限于：</p>
       <ul>
         <li>微信公众号相关服务：用于扫码 / 动态码登录、身份识别和账号确认</li>
-        <li>DeepSeek 翻译服务：用于生成翻译结果</li>
+        <li>DeepSeek 翻译服务：经由自有 Cloudflare Worker 转发，用于生成翻译结果</li>
         <li>TRONSCAN / 波场链相关查询服务：用于核验 USDT 转账是否到账</li>
         <li>Telegram Bot API（如启用）：用于订单通知、售后支持和安全审计</li>
       </ul>
@@ -326,7 +326,7 @@
       <h2>5. Third-Party Services</h2>
       <ul>
         <li>WeChat-related services for login and identity recognition</li>
-        <li>DeepSeek translation service for translation results</li>
+        <li>DeepSeek's translation service forwards translations via its own Cloudflare Workers to generate translation results.</li>
         <li>TRONSCAN / TRON-related query services for verifying USDT transfers</li>
         <li>Telegram Bot API (if enabled) for order notification and support</li>
       </ul>
